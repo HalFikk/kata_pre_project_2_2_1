@@ -29,7 +29,8 @@ public class MainApp {
       userService.add(user5);
       userService.add(user6);
       userService.add(user7);
-      //userService.usersCar("MB", 5);
+      User user1 = userService.usersCar("MB", 5);
+      System.out.println(user1);
 
       List<User> users = userService.listUsers();
       for (User user : users) {
